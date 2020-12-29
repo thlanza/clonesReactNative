@@ -1,0 +1,81 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-twitterclone-dev-144534-authRole",
+      "UnauthRoleArn": "arn:aws:iam::473562362995:role/amplify-twitterclone-dev-144534-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::473562362995:role/amplify-twitterclone-dev-144534-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-twitterclone-dev-144534-deployment",
+      "UnauthRoleName": "amplify-twitterclone-dev-144534-unauthRole",
+      "StackName": "amplify-twitterclone-dev-144534",
+      "StackId": "arn:aws:cloudformation:us-east-1:473562362995:stack/amplify-twitterclone-dev-144534/e5207900-1ba0-11eb-9b35-0e55cf8eb989",
+      "AmplifyAppId": "drd0lo6iomqzd"
+    }
+  },
+  "auth": {
+    "twittercloneae4c5bb2": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-twitterclone-dev-144534-deployment/amplify-cfn-templates/auth/twittercloneae4c5bb2-cloudformation-template.yml",
+        "logicalId": "authtwittercloneae4c5bb2"
+      },
+      "lastPushTimeStamp": "2020-11-13T18:54:29.095Z",
+      "output": {
+        "AppClientSecret": "19odi9ej90cq93ag69adismcuoo64cqfs2ql3pujf25p27ahhqlr",
+        "UserPoolId": "us-east-1_ds0uVVNEL",
+        "AppClientIDWeb": "680q7a6cnqe17bi54u5pp91sae",
+        "AppClientID": "507pf7bb3ca3rrhe52s82cb1es",
+        "IdentityPoolId": "us-east-1:03bb10c3-f091-40c4-bcd9-01c96a4722e7",
+        "IdentityPoolName": "twittercloneae4c5bb2_identitypool_ae4c5bb2__dev",
+        "UserPoolName": "twittercloneae4c5bb2_userpool_ae4c5bb2"
+      },
+      "lastPushDirHash": "H4DobUE2luKw38Dw1PREMC4aTnk="
+    }
+  },
+  "api": {
+    "twitterclone": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 365,
+              "description": "api key"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "zriz6nj6ojck5fwexaopcblqwm",
+        "GraphQLAPIEndpointOutput": "https://buqfglksejexdomnyeqvyepkxq.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-dipyti6xorgczbzui7byl5gqly"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-twitterclone-dev-144534-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apitwitterclone"
+      },
+      "lastPushTimeStamp": "2020-11-13T18:54:31.841Z",
+      "lastPushDirHash": "vLBMtHvCN3to4eG488NidVWbv24="
+    }
+  },
+  "storage": {
+    "TwitterClone": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-twitterclone-dev-144534-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+        "logicalId": "storageTwitterClone"
+      },
+      "lastPushTimeStamp": "2020-11-13T18:54:29.109Z",
+      "output": {
+        "BucketName": "twitter-clone-thlanza144534-dev",
+        "Region": "us-east-1"
+      },
+      "lastPushDirHash": "gmJXzDiUsKEHAPi090x5ySKi9r4="
+    }
+  }
+}

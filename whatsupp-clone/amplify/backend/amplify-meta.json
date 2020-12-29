@@ -1,0 +1,63 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-whatsappclone-dev-162016-authRole",
+      "UnauthRoleArn": "arn:aws:iam::473562362995:role/amplify-whatsappclone-dev-162016-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::473562362995:role/amplify-whatsappclone-dev-162016-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-whatsappclone-dev-162016-deployment",
+      "UnauthRoleName": "amplify-whatsappclone-dev-162016-unauthRole",
+      "StackName": "amplify-whatsappclone-dev-162016",
+      "StackId": "arn:aws:cloudformation:us-east-1:473562362995:stack/amplify-whatsappclone-dev-162016/f01f6680-2452-11eb-adfa-0e715b49d7c1",
+      "AmplifyAppId": "d2p0fckqw1fv64"
+    }
+  },
+  "auth": {
+    "whatsappclone6c1ce934": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-whatsappclone-dev-162016-deployment/amplify-cfn-templates/auth/whatsappclone6c1ce934-cloudformation-template.yml",
+        "logicalId": "authwhatsappclone6c1ce934"
+      },
+      "lastPushTimeStamp": "2020-11-16T22:52:00.413Z",
+      "output": {
+        "AppClientSecret": "15o6oat2vdd1g5e09g46iolgnq4av83k3qunuimgitghu9o6rlr1",
+        "UserPoolId": "us-east-1_BGwYQuQKY",
+        "AppClientIDWeb": "7r8ddaq2oq3sjb2ulosa5ckeni",
+        "AppClientID": "5mo845vt2bujnjo64sr3ko1m5t",
+        "IdentityPoolId": "us-east-1:e85535ba-1fa3-4933-878c-e8bfc5917047",
+        "IdentityPoolName": "whatsappclone6c1ce934_identitypool_6c1ce934__dev",
+        "UserPoolName": "whatsappclone6c1ce934_userpool_6c1ce934"
+      },
+      "lastPushDirHash": "+UXzCnnfrax0gOoSxh26yR/heko="
+    }
+  },
+  "api": {
+    "whatsappclone": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authwhatsappclone6c1ce934"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "ttxgqbtwjzgctickayotxfxd6q",
+        "GraphQLAPIEndpointOutput": "https://bnxmek6nzngjxl4grilnx5h4eq.appsync-api.us-east-1.amazonaws.com/graphql"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-whatsappclone-dev-162016-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiwhatsappclone"
+      },
+      "lastPushTimeStamp": "2020-11-16T22:52:04.085Z",
+      "lastPushDirHash": "BqCk/0aP9ms1V0wvHmIb6Q79/64="
+    }
+  }
+}

@@ -1,0 +1,11 @@
+Album Category
+Thrash de Qualidade
+id: 0e659248-cc17-4fd7-a894-b84f69ea7d64
+
+Tônus
+id: 377e0cc0-bf20-4e60-acd9-5266c0b1433c
+imageUri: https://3.bp.blogspot.com/-7MFh4JAIW2w/W1RrZPUS6xI/AAAAAAAALn0/ZDJeih_DQVUoXbttInHcVHnH-6fxfhmHwCLcBGAs/s400/capa-2-e1532001345407.jpg
+
+Seasons in the Abyss
+id: d018a11f-2629-40a1-9f74-e69cfb688b13
+imageUri: https://images-na.ssl-images-amazon.com/images/I/61OPjCb1WKL._AC_SX466_.jpg

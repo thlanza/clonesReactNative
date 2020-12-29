@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "YouTubeClone",
+    "slug": "YouTubeClone",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "android" : {
+      "package": "com.lanzacorp.videoapp",
+      "versionCode": 1
+    },
+    "ios": {
+      "bundleIdentifier": "com.lanzacorp.videoapp",
+      "buildNumber": "1.0.0"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
